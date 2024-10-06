@@ -68,7 +68,16 @@ public class Payment {
         }
     }
 
-    
+    public void printAll()
+    {
+        System.out.println("Description: " + description);
+        System.out.println("Date: " + date);
+        System.out.println("Amount: " + amount);
+        System.out.println("Incoming interest: " + getIncomingInterest());
+        System.out.println("Outgoin interest: " + getOutgoingInterest());
+    }
+
+
     /**
      * @param date is the date of the transaction.
      * @param amount is the amount of money being transferred.
@@ -77,3 +86,6 @@ public class Payment {
      * @param outgoingInterest represents interest charged on outgoing transactions
      * */
 }
+
+
+
